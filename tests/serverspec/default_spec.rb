@@ -2,7 +2,7 @@ require "spec_helper"
 
 config = "/etc/devfs.rules"
 
-rules = <<'__EOF__'
+rules = <<'__DEVFS__'
 # Managed by ansible
 [devfsrules_jail_with_bpf=100]
 add include $devfsrules_hide_all
@@ -14,7 +14,7 @@ add path 'tun*' unhide
 
 [my_rule=999]
 add path 'tun*' hide
-__EOF__
+__DEVFS__
 
 describe file(config) do
   it { should be_file }
