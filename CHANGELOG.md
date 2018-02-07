@@ -1,3 +1,8 @@
+## Release 2.1.1
+
+* 0fac928 [bugfix] reimport the role with QA fixes (#1)
+* 312d6b9 [bugfix] fix thirdparty repo, bump rubocop and QA (#7)
+
 ## Release 2.1.0
 
 * 58cf9da [feature] introduce devfsrules_devfs_set_rulesets (#5)
